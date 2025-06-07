@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewMovement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MovementPatternFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvHeatmapFirstHalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heatmap - First Half"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <com.example.soccergpsapp.ui.HeatmapView
+            android:id="@+id/heatmapViewFirstHalf"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/tvHeatmapSecondHalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heatmap - Second Half"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <com.example.soccergpsapp.ui.HeatmapView
+            android:id="@+id/heatmapViewSecondHalf"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/tvMovementPathsFirstHalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movement Paths - First Half"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <com.example.soccergpsapp.ui.MovementPathView
+            android:id="@+id/movementPathViewFirstHalf"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/tvMovementPathsSecondHalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movement Paths - Second Half"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <com.example.soccergpsapp.ui.MovementPathView
+            android:id="@+id/movementPathViewSecondHalf"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+</ScrollView>
