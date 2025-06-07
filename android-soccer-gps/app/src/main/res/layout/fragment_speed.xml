@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewSpeed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SpeedFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Speed gauges placeholder -->
+        <TextView
+            android:id="@+id/tvSpeedGaugesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed Gauges"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <com.example.soccergpsapp.ui.SpeedGaugeView
+            android:id="@+id/speedGauge1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp" />
+
+        <com.example.soccergpsapp.ui.SpeedGaugeView
+            android:id="@+id/speedGauge2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Speed line chart -->
+        <TextView
+            android:id="@+id/tvSpeedLineChartTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed Over Time"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChartSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <!-- Time spent in speed zones donut chart -->
+        <TextView
+            android:id="@+id/tvSpeedZonesDonutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Spent in Speed Zones"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChartSpeedZones"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <!-- Distance covered in speed zones funnel chart -->
+        <TextView
+            android:id="@+id/tvSpeedZonesFunnelTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance Covered in Speed Zones"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartSpeedZonesFirstHalf"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartSpeedZonesSecondHalf"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <!-- Funnel chart placeholder -->
+        <View
+            android:id="@+id/funnelChartPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#CCCCCC" />
+
+    </LinearLayout>
+</ScrollView>
